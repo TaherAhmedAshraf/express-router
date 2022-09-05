@@ -1,5 +1,5 @@
 {
-  "name": "express-router",
+  "name": "express-dynamic-routing",
   "version": "1.0.0",
   "description": "Makes expressjs routing dynamic & easy",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/TaherAhmedAshraf/express-router.git"
   },
   "keywords": [
-    "express-router"
+    "express-dynamic-routing"
   ],
   "author": "Taher Ahmed Ashraf",
   "license": "ISC",
