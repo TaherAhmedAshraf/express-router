@@ -8,9 +8,7 @@ function dynamicRouter(app, folder, ...middlewares) {
     if(!supportedExtensions.includes(path.extname(file))) return
 
     const route = require(path.join(folder, file));
+    app.use(route.path, ...middlewares, route);
 })};
-
-// dynamicRouter('', "/home/proashraf/Workstation/personal/npm-pkg/express-router/test/router")
-
 
 module.exports = dynamicRouter;
