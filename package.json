@@ -1,0 +1,22 @@
+{
+  "name": "express-router",
+  "version": "1.0.0",
+  "description": "Makes expressjs routing dynamic & easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaherAhmedAshraf/express-router.git"
+  },
+  "keywords": [
+    "express-router"
+  ],
+  "author": "Taher Ahmed Ashraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaherAhmedAshraf/express-router/issues"
+  },
+  "homepage": "https://github.com/TaherAhmedAshraf/express-router#readme"
+}
