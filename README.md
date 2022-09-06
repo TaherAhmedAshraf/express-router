@@ -1,5 +1,5 @@
 
-# Express Dynamic Router
+# Express Dynamic Routing
 
   
 
@@ -11,14 +11,14 @@ express-dynamic-routing automatically reads all of the files and dynamically rou
 
 Pass your route folder and it will automatically route all of the express routes that the folder has, if your file name is **test.js** it will be accessible at **/test**.
 
-For example, inside the route folder, we have two route files-
+For example, inside the route folder, I have two route files-
 
 1.  hello-world.js
 2.  hello-express.js
 
 So the ``hello-word.js`` file will be accessible at ``/hello-world`` & ``hello-express.js`` will be accessible at ``/hello-express``. URL = Prefix + filename.
 
-If you set the prefix to ``/my-api/`` then it will be acessable at ``/my-api/hello-word`` & ``/my-api/hello-express``.
+If I set the prefix to ``/my-api/`` then it will be acessable at ``/my-api/hello-word`` & ``/my-api/hello-express``.
 
 Let's create a folder **auth** inside the route directory and create a route 		``login.js`` in that case route will e accessible at ``/auth/login``.
 
@@ -46,7 +46,7 @@ erouter({
 app.listen(8000, () => console.log('Server started on port 8000'));
 ```
 
-If you don't want to use the filename as route path you can specify a path in your directory like this
+If you don't want to use the filename as route path, you can specify a path in your directory like this
 
 ```js
 // /route/test.js
@@ -62,7 +62,7 @@ router.get('/', (req, res) => {
 module.exports  = router;
 ```
 
-After specifying the path express-dynamic-routing will now use the path instead of using the filename.
+After specifying the path express-dynamic-routing will now use the path you specified, instead of using the filename.
 
 I have a route `test.js` in my route folder and the prefix is '/'.
 If I haven't specified the custom path my route URL would be `/test`. But after specifying the path my route URL is '/hello-world. This is how you can specify your own custom path.
