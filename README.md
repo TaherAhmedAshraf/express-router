@@ -21,7 +21,7 @@ If the file is not a **.js/.ts** file or not a express route, it will automatica
 
 Again, if you have a folder inside your route folder, It will also route the files inside that folder directory. In that case path will be like this- `prefix + directory_name + file_name`
 
-Suppose we have a directory "hello" inside our route folder, And iniside hello we have a route file `status.js`. So the path will be - `/hello/status`.
+Suppose we have a directory "hello" inside our route folder, And inside hello we have a route file `status.js`. So the path will be - `/hello/status`.
 
 ```js
 // /index.js
@@ -42,7 +42,7 @@ erouter({
 app.listen(8000, () => console.log('Server started on port 8000'));
 ```
 
-You can also pass a custom path name instead of using file name. In that case you can specify a path in your route file like this-
+You can also pass a custom path name instead of using file name. In that case a path in your route file like this-
 
 ```js
 // /route/test.js
@@ -61,7 +61,7 @@ module.exports  = router;
 Here we have specified a path, instead of using file_name it will  use the path_name we specified.
 
 I have a route `test.js` in my route folder and the prefix is '/'.
-If I havean't specified cusotm path my route url would be `/test`. But after specifying the path my route url is '/hello-world'. This is how you can specify your own custom path.
+If I havean't specified cusotom path, my route url would be `/test`. But after specifying the path my route url is '/hello-world'. This is how you can specify your own custom path.
 
 
 | Property | Description |
