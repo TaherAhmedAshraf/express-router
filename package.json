@@ -4,12 +4,14 @@
   "description": "Makes expressjs routing dynamic & easy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TaherAhmedAshraf/express-router.git"
   },
+  "files": ["lib/**/*"],
   "keywords": [
     "express-dynamic-routing",
     "dynamic-route-express",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/TaherAhmedAshraf/express-router/issues"
   },
-  "homepage": "https://github.com/TaherAhmedAshraf/express-router#readme"
+  "homepage": "https://github.com/TaherAhmedAshraf/express-router#readme",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.15"
+  }
 }
