@@ -11,7 +11,9 @@
     "url": "git+https://github.com/TaherAhmedAshraf/express-router.git"
   },
   "keywords": [
-    "express-dynamic-routing"
+    "express-dynamic-routing",
+    "dynamic-route-express",
+    "express-routing"
   ],
   "author": "Taher Ahmed Ashraf",
   "license": "ISC",
