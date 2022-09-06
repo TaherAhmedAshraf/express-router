@@ -3,9 +3,9 @@
 
   
 
-Dynamic your express app with just a few lines of code!
+Make your express app dynamic with just a few lines of code!
 
-express-dynamic-routing automatically reads all of the files and dynamically routes them.
+**express-dynamic-routing automatically** reads all of the files and dynamically routes them.
 
   
 
@@ -16,15 +16,17 @@ For example, inside the route folder, I have two route files-
 1.  hello-world.js
 2.  hello-express.js
 
-So the ``hello-word.js`` file will be accessible at ``/hello-world`` & ``hello-express.js`` will be accessible at ``/hello-express``. URL = Prefix + filename.
+So the ``hello-word.js`` file will be accessible at ``/hello-world`` & ``hello-express.js`` will be accessible at ``/hello-express``. 
+
+URL = Prefix + filename.
 
 If I set the prefix to ``/my-api/`` then it will be acessable at ``/my-api/hello-word`` & ``/my-api/hello-express``.
 
-Let's create a folder **auth** inside the route directory and create a route 		``login.js`` in that case route will e accessible at ``/auth/login``.
+Let's create a folder "**auth**" inside the route directory and create a route ``login.js``, in that case route will be accessible at ``/auth/login``.
 
-Here, **auth** is the name of the folder & **login** is the name of the route file. That means folders inside the route directory will also be read by it.  
+Here, "**auth**" is the name of the folder & "**login**" is the name of the route file. That means folders inside the route directory will also be read by it.  
 
-express-dynamic-routing only reads .js & .ts express routes. For other files, it throws a warning. To avoid warnings you can set ``disableWarning: true``.
+**express-dynamic-routing** only reads **.js** & **.ts** express routes. For other files, it throws a warning. To avoid warnings, you can set ``disableWarning: true``.
 
 
 ```js
@@ -62,10 +64,10 @@ router.get('/', (req, res) => {
 module.exports  = router;
 ```
 
-After specifying the path express-dynamic-routing will now use the path you specified, instead of using the filename.
+After specifying the path, **express-dynamic-routing** will now use the path you specified, instead of using the filename.
 
 I have a route `test.js` in my route folder and the prefix is '/'.
-If I dont't specify the custom path my route URL will be `/test`. But if I specify the path my route URL will be '/hello-world. This is how you can specify your own custom path.
+If I dont't specify the custom path my route URL will be `/test`. But if I specify the path, my route URL will be '/hello-world. This is how you can specify your own custom path.
 
 
 
