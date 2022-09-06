@@ -28,4 +28,4 @@ function dynamicRouter({prefix='/',app,folder,middlewares=[],disableWarnings=fal
       }
 })};
 
-module.exports = dynamicRouter
+export default dynamicRouter;
