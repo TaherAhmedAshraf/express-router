@@ -65,7 +65,7 @@ module.exports  = router;
 After specifying the path express-dynamic-routing will now use the path you specified, instead of using the filename.
 
 I have a route `test.js` in my route folder and the prefix is '/'.
-If I haven't specified the custom path my route URL would be `/test`. But after specifying the path my route URL is '/hello-world. This is how you can specify your own custom path.
+If I dont't specify the custom path my route URL will be `/test`. But if I specify the path my route URL will be '/hello-world. This is how you can specify your own custom path.
 
 
 
